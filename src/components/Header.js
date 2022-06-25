@@ -1,6 +1,5 @@
+import { Link } from "react-router-dom";
 import logo from "./../assets/logo.png";
-
-
 
 export default function Header() {
   return (
@@ -9,21 +8,26 @@ export default function Header() {
       style={{
         padding: "0px 5vw",
         alignItems: "center",
-        backgroundImage: "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)"
+        backgroundImage:
+          "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)",
       }}
     >
       {/* Left */}
-      <div className="left flex">
+      <Link className="left flex" to="/">
         <div className="logo mr-8">
           <img src={logo} />
         </div>
         <div className="company_name">
-          <p style={{
-            fontSize: "20px",
-            color: "white"
-          }}>Aira Protocol</p>
+          <p
+            style={{
+              fontSize: "20px",
+              color: "white",
+            }}
+          >
+            Aira Protocol
+          </p>
         </div>
-      </div>
+      </Link>
 
       {/* Right */}
       <div className="right flex">
@@ -37,26 +41,28 @@ export default function Header() {
             marginRight: "40px",
           }}
         >
-          <li
+          <Link
+            to="/how-it-work"
             style={{
               fontFamily: "Inter",
               fontSize: "16px",
               color: "#FAFAFA",
-              marginRight: "20px"
+              marginRight: "20px",
             }}
           >
             How It Works
-          </li>
-          <li
+          </Link>
+          <Link
+            to="/team"
             style={{
               fontFamily: "Inter",
               fontSize: "16px",
               color: "#FAFAFA",
-              marginRight: "20px"
+              marginRight: "20px",
             }}
           >
             Team
-          </li>
+          </Link>
         </nav>
         <button
           style={{
