@@ -45,7 +45,7 @@ export default function Team() {
       id: 6,
       title: "Advisory Board",
       description:
-        "With these accrued gains in effciency, we aim to offer sector leading borrowing rates and staking yields to Liquidity providers.",
+        "Our trusted advisors bring a breadth of experience to our team from various fields; Such as that related to market sentiments, tokenomics, marketing, strategy, networking.",
     },
   ];
   return (
