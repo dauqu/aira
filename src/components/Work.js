@@ -323,9 +323,9 @@ export default function Work() {
             Our Growth Strategy
           </p>
           <div
-            className="grid grid-cols-2 mt-20 grid-rows-2 gap-5"
+            className="grid grid-cols-2 mt-20 grid-rows-2 gap-10"
             style={{
-              width: "70%",
+              width: "65%",
               marginLeft: "50%",
               transform: "translateX(-50%)",
               justifyContent: "left",
@@ -342,8 +342,9 @@ export default function Work() {
                     textAlign: "left",
                     background: "#fff",
                     borderRadius: "25px",
-                    padding: "10px",
-                    height: "30vh",
+                    padding: "5%",
+                    height: "auto",
+                    minHeight: "32vh"
                   }}
                 >
                   <img src={item.icon} />
@@ -353,6 +354,7 @@ export default function Work() {
                       color: "black",
                       fontFamily: "Inter",
                       fontWeight: "700",
+                      marginTop: "1vw"
                     }}
                   >
                     {item.title}
@@ -364,6 +366,7 @@ export default function Work() {
                       color: "black",
                       justifyContent: "left",
                       alignItems: "start",
+                      marginTop: "1vw"
                     }}
                   >
                     {item.description}

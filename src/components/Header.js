@@ -1,15 +1,28 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../assets/logo.png";
 
 export default function Header() {
+
+  const [scroll, setScroll] = useState([])
+
+  setInterval(() => {
+    setScroll(window.scrollY)
+  }, 100);
+
+
   return (
     <div
       className="header h-16 flex text-center justify-between"
       style={{
         padding: "0px 5vw",
         alignItems: "center",
-        backgroundImage:
-          "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)",
+        position: "fixed",
+        width: "100%",
+        zIndex: "100",
+        backgroundColor: scroll > 200 ? "#000000" : "#00000000"
+        // backgroundImage:
+        //   "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)",
       }}
     >
       {/* Left */}

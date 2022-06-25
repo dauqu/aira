@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "./../assets/logo.png";
+import twitter from "./../assets/twitter.png";
 
 export default function Footer() {
   return (
@@ -58,15 +59,14 @@ export default function Footer() {
             style={{
               color: "white",
               padding: "10px",
-              border: "1px solid white",
               borderRadius: "100px",
               margin: "0px 10px",
             }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="25"
+              height="25"
               fill="currentColor"
               class="bi bi-twitter"
               viewBox="0 0 16 16"
@@ -79,15 +79,14 @@ export default function Footer() {
             style={{
               color: "white",
               padding: "10px",
-              border: "1px solid white",
               borderRadius: "100px",
               margin: "0px 10px",
             }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="25"
+              height="25"
               fill="currentColor"
               class="bi bi-twitter"
               viewBox="0 0 16 16"
@@ -99,15 +98,14 @@ export default function Footer() {
             style={{
               color: "white",
               padding: "10px",
-              border: "1px solid white",
               borderRadius: "100px",
               margin: "0px 10px",
             }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="25"
+              height="25"
               fill="currentColor"
               class="bi bi-twitter"
               viewBox="0 0 16 16"
@@ -118,11 +116,38 @@ export default function Footer() {
         </div>
       </div>
 
-      <div style={{
-        width: "100%", 
-        height: "10px", 
-        borderBottom: "1px solid white"
-      }}></div>
+      <div
+        style={{
+          width: "auto",
+          height: "auto",
+          borderTop: "1px solid white",
+          display: "flex",
+          background: "#0D1F5B",
+          padding: "10px 6%",
+          justifyContent: "end", 
+
+        }}
+      >
+        <p
+          style={{
+            color: "white",
+            fontSize: "12px",
+            fontFamily: "Inter",
+          }}
+        >
+          © 2021, Aira Protocol. All Rights Reserved.
+        </p>
+        <p
+          style={{
+            color: "white",
+            fontSize: "12px",
+            fontFamily: "Inter",
+            marginLeft: "10px"
+          }}
+        >
+          Privacy Policy • Terms and conditions
+        </p>
+      </div>
     </>
   );
 }
