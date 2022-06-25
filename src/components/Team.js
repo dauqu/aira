@@ -1,51 +1,49 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Background from "./../assets/sec_1_background.png";
-import A1 from "./../assets/ic_1.png";
-import A2 from "./../assets/ic_2.png";
-import A3 from "./../assets/ic_3.png";
+import trans from "./../assets/trans.png";
+
 
 export default function Team() {
   const details_data = [
     {
       id: 1,
-      icon: A1,
-      title: "Utilization",
+      icon: trans,
+      title: "Zeo",
       description:
         "Aira Protocol allows the utilization of traditional interest-bearing assets, asset tokens & LP share tokens to mint an over-collateralized stable coin.",
     },
     {
       id: 2,
-      icon: A2,
-      title: "Liquidity",
+      icon: trans,
+      title: "Kurtz — Co-Founder & COO",
       description:
         "As Dan Elitzer explained in this post on super- fuid collateral - “If assets can be allocated for multiple  purposes  simultaneously, we  should see more liquidity, lower cost of borrowing, and more effective allocation of capital.”",
     },
     {
       id: 3,
-      icon: A3,
-      title: "Efficiency",
+      icon: trans,
+      title: "Anthony — Lead Developer",
       description:
         "With these accrued gains in effciency, we aim to offer sector leading borrowing rates and staking yields to Liquidity providers.",
     },
     {
       id: 4,
-      icon: A1,
-      title: "Utilization",
+      icon: trans,
+      title: "Philippe — Developer",
       description:
         "Aira Protocol allows the utilization of traditional interest-bearing assets, asset tokens & LP share tokens to mint an over-collateralized stable coin.",
     },
     {
       id: 5,
-      icon: A2,
-      title: "Liquidity",
+      icon: trans,
+      title: "Satsdart — Lead Advisor",
       description:
         "As Dan Elitzer explained in this post on super- fuid collateral - “If assets can be allocated for multiple  purposes  simultaneously, we  should see more liquidity, lower cost of borrowing, and more effective allocation of capital.”",
     },
     {
       id: 6,
-      icon: A3,
-      title: "Efficiency",
+      title: "Advisory Board",
       description:
         "With these accrued gains in effciency, we aim to offer sector leading borrowing rates and staking yields to Liquidity providers.",
     },
@@ -65,7 +63,7 @@ export default function Team() {
           boxShadow: "0px",
         }}
       >
-        <div className="">
+        <div className="mt-40">
           <div
             style={{
               justifyContent: "left",
@@ -121,7 +119,7 @@ export default function Team() {
                     transform: "translateX(-50%)",
                   }}
                 >
-                  <img src={item.icon} />
+                  <img src={item.icon === null? "" : item.icon} />
                 </div>
                 <p
                   className="mt-5"
@@ -169,7 +167,7 @@ export default function Team() {
                 fontFamily: "PP Neue Machina",
               }}
             >
-              Get integrated.
+              Get started now.
             </p>
             <p
               style={{
@@ -178,7 +176,7 @@ export default function Team() {
                 color: "white",
               }}
             >
-              Easy integration, frictionless access, and safeness.
+             User-friendly, optimizable, and secure staking.
             </p>
           </div>
           <button
@@ -186,13 +184,14 @@ export default function Team() {
               width: "232px",
               height: "60px",
               borderRadius: "32px",
-              background: "#FAFAFA",
+              background: "#1C64F2",
               justifyContent: "center",
               textAlign: "center",
               alignItems: "center",
+              color: "#ffffff"
             }}
           >
-            Get Docs
+            Launch App
           </button>
         </div>
         <Footer/>
