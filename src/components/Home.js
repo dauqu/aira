@@ -4,6 +4,7 @@ import IC1 from "./../assets/ic_1.png";
 import IC2 from "./../assets/ic_2.png";
 import IC3 from "./../assets/ic_3.png";
 import logo from "./../assets/logo.png";
+import logo2 from "./../assets/logo2.png";
 import Footer from "./Footer";
 
 export default function Home() {
@@ -290,8 +291,22 @@ export default function Home() {
                 height: "100%",
                 background: "#fff",
                 borderRadius: "20px",
+                padding: "1vw",
+                justifyContent: "space-around",
+                alignItems: "center",
+                textAlign: "center",
               }}
-            ></div>
+            >
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                LP Tokens from major pools
+              </div>
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                Regular Tokens
+              </div>
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                Interest Bearing Tokens{" "}
+              </div>
+            </div>
             <svg
               style={{
                 color: "white",
@@ -314,8 +329,14 @@ export default function Home() {
                 height: "100%",
                 background: "#fff",
                 borderRadius: "20px",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                paddingTop: "50%"
               }}
-            ></div>
+            >
+              <img src={logo2} />
+            </div>
             <svg
               style={{
                 color: "white",
@@ -338,8 +359,22 @@ export default function Home() {
                 height: "100%",
                 background: "#fff",
                 borderRadius: "20px",
+                justifyContent: "space-around",
+                alignItems: "center",
+                textAlign: "center",
+                padding: "1vw",
               }}
-            ></div>
+            >
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                LP Tokens from major pools
+              </div>
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                Regular Tokens
+              </div>
+              <div className="sh shadow-lg rounded mt-5 p-2">
+                Interest Bearing Tokens{" "}
+              </div>
+            </div>
           </div>
         </div>
 
