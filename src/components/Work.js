@@ -3,6 +3,11 @@ import Background from "./../assets/sec_1_background.png";
 import Background2 from "./../assets/sec_2_background.png";
 import Background3 from "./../assets/sec_3_background.png";
 import Background4 from "./../assets/sec_4_background.png";
+
+import A1 from "./../assets/ic_1.png";
+import A2 from "./../assets/ic_2.png";
+import A3 from "./../assets/ic_3.png";
+
 import IC1 from "./../assets/mic_1.png";
 import IC2 from "./../assets/mic_2.png";
 import IC3 from "./../assets/mic_3.png";
@@ -13,21 +18,21 @@ export default function Work() {
   const details_data = [
     {
       id: 1,
-      icon: IC1,
+      icon: A1,
       title: "Utilization",
       description:
         "Aira Protocol allows the utilization of traditional interest-bearing assets, asset tokens & LP share tokens to mint an over-collateralized stable coin.",
     },
     {
       id: 2,
-      icon: IC2,
+      icon: A2,
       title: "Liquidity",
       description:
         "As Dan Elitzer explained in this post on super- fuid collateral - “If assets can be allocated for multiple  purposes  simultaneously, we  should see more liquidity, lower cost of borrowing, and more effective allocation of capital.”",
     },
     {
       id: 3,
-      icon: IC3,
+      icon: A3,
       title: "Efficiency",
       description:
         "With these accrued gains in effciency, we aim to offer sector leading borrowing rates and staking yields to Liquidity providers.",
