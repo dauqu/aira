@@ -274,6 +274,7 @@ export default function Home() {
           <div
             className="grid gap-4 grid-cols-5 mt-20 w-10/12 backdrop-blur-sm bg-white/30"
             style={{
+              width: "100%",
               justifyContent: "center",
               textAlign: "center",
               alignItems: "center",
@@ -281,7 +282,7 @@ export default function Home() {
               borderRadius: "15px",
               transform: "translateX(-50%)",
               marginLeft: "50%",
-              height: "40vh",
+              height: "auto",
               padding: "2vw",
             }}
           >

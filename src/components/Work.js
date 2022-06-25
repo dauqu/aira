@@ -429,7 +429,7 @@ export default function Work() {
                     background: "#fff",
                     borderRadius: "25px",
                     padding: "10%",
-                    height: "45vh",
+                    height: "auto",
                   }}
                 >
                   <img src={item.icon} />
