@@ -61,7 +61,7 @@ export default function Team() {
           height: "auto",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          padding: "8%",
+          padding: "2% 8%",
           boxShadow: "0px",
         }}
       >
@@ -195,16 +195,10 @@ export default function Team() {
             Get Docs
           </button>
         </div>
-
-        <Footer />
+        <Footer/>
       </section>
-      <section
-        style={{
-          background: "#0A2790",
-          height: "10vh",
-          width: "100%",
-        }}
-      >;</section>
+
+            
     </>
   );
 }

@@ -102,19 +102,25 @@ export default function Work() {
       id: 1,
       title: "Phase One",
       description:
-        "Between Uniswap & Curve we have over $13 billion in TVL, that lies untapped and ready to be deployed towards more productive tasks We are focusing on is stETH from Lido or other variants of staked ETH. There are $8b of stETH on the market, and we as a platform can provide efficient use of capital for users who are staking their ETH with Lido by allowing them to borrow against it to either hedge or just to get the extra liquidity.",
+        "Between Uniswap & Curve we have over $13 billion in TVL, that lies untapped and ready to be deployed towards more productive tasks ",
+      sec_des:
+        "We are focusing on is stETH from Lido or other variants of staked ETH. There are $8b of stETH on the market, and we as a platform can provide efficient use of capital for users who are staking their ETH with Lido by allowing them to borrow against it to either hedge or just to get the extra liquidity.",
     },
     {
       id: 2,
       title: "Phase Two",
       description:
-        "4-6 weeks post the first launch sprint, we aim to expand to add compatibility for roll-ups/L2s.  Followed by a  launch on AVAX, Aurora, and other EVM-compatible chains. This would be quite contingent on how we see EVM compatibility develop on the Cosmos ecosystem over the next few weeks as we see an opportunity to be exploited with untapped demand for feature-rich DeFi offerings.",
+        "4-6 weeks post the first launch sprint, we aim to expand to add compatibility for roll-ups/L2s.  Followed by a  launch on AVAX, Aurora, and other EVM-compatible chains. ",
+      sec_des:
+        "This would be quite contingent on how we see EVM compatibility develop on the Cosmos ecosystem over the next few weeks as we see an opportunity to be exploited with untapped demand for feature-rich DeFi offerings.",
     },
     {
       id: 3,
       title: "Future Frontiers",
       description:
-        "With the potential launch of our EUR, YUAN, YEN, JPY, and other stable coins that users can mint/borrow instead of the USD stable coin, this will lead us to offer FX trading capabilities in-house which will lead to extra revenues for the platform. And extra revenues lead to increased staking yields. After we are done with expansion to EVM chains, we will then begin our expansion into non-EVM chains such as Solana, Cosmos, Near, etc",
+        "With the potential launch of our EUR, YUAN, YEN, JPY, and other stable coins that users can mint/borrow instead of the USD stable coin, this will lead us to offer FX trading capabilities in-house which will lead to extra revenues for the platform.",
+      sec_des:
+        "And extra revenues lead to increased staking yields. After we are done with expansion to EVM chains, we will then begin our expansion into non-EVM chains such as Solana, Cosmos, Near, etc",
     },
   ];
   return (
@@ -344,7 +350,7 @@ export default function Work() {
                     borderRadius: "25px",
                     padding: "5%",
                     height: "auto",
-                    minHeight: "32vh"
+                    minHeight: "35vh",
                   }}
                 >
                   <img src={item.icon} />
@@ -354,7 +360,7 @@ export default function Work() {
                       color: "black",
                       fontFamily: "Inter",
                       fontWeight: "700",
-                      marginTop: "1vw"
+                      marginTop: "1vw",
                     }}
                   >
                     {item.title}
@@ -366,7 +372,7 @@ export default function Work() {
                       color: "black",
                       justifyContent: "left",
                       alignItems: "start",
-                      marginTop: "1vw"
+                      marginTop: "1vw",
                     }}
                   >
                     {item.description}
@@ -433,6 +439,7 @@ export default function Work() {
                     borderRadius: "25px",
                     padding: "10%",
                     height: "auto",
+                    minHeight: "55vh",
                   }}
                 >
                   <img src={item.icon} />
@@ -447,6 +454,7 @@ export default function Work() {
                     {item.title}
                   </p>
                   <p
+                    className="mt-5"
                     style={{
                       fontSize: "16px",
                       fontWeight: "500",
@@ -456,6 +464,18 @@ export default function Work() {
                     }}
                   >
                     {item.description}
+                  </p>
+                  <p
+                    className="mt-10"
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "500",
+                      color: "black",
+                      justifyContent: "left",
+                      alignItems: "start",
+                    }}
+                  >
+                    {item.sec_des}
                   </p>
                 </div>
               );
@@ -508,7 +528,7 @@ export default function Work() {
             Get Docs
           </button>
         </div>
-        <Footer className="mt-9" />
+        <Footer />
       </section>
     </>
   );

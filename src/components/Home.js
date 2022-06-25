@@ -6,6 +6,7 @@ import IC3 from "./../assets/ic_3.png";
 import logo from "./../assets/logo.png";
 import logo2 from "./../assets/logo2.png";
 import Footer from "./Footer";
+import "./style.css";
 
 export default function Home() {
   const details_data = [
@@ -42,7 +43,7 @@ export default function Home() {
       <Header />
       {/* TOp Frame  */}
       <div
-        className="main pt-10"
+        className="main pt-40 mt-0"
         style={{
           justifyContent: "center",
           alignItems: "center",
@@ -58,11 +59,11 @@ export default function Home() {
           }}
         >
           <p
-            className="font"
+            className="font font-pp"
             style={{
               color: "white",
               fontSize: "64px",
-              fontFamily: "PP Neue Machina",
+              fontFamily: "",
               textAlign: "center",
             }}
           >
@@ -239,8 +240,12 @@ export default function Home() {
               style={{
                 fontSize: "64px",
                 color: "white",
-                fontFamily: "PP Neue Machina",
+                fontFamily: "pp neue machina",
                 color: "#FAFAFA",
+                fontWeight: "800", 
+                lineHeight: "130%", 
+                fontStyle: "normal", 
+                height: "83px"
               }}
             >
               How is works?
@@ -289,22 +294,39 @@ export default function Home() {
             <div
               style={{
                 width: "100%",
-                height: "100%",
+                height: "auto",
                 background: "#fff",
                 borderRadius: "20px",
                 padding: "1vw",
+                display: "block",
                 justifyContent: "space-around",
                 alignItems: "center",
                 textAlign: "center",
+                minHeight: "30vh",
               }}
             >
-              <div className="sh shadow-lg rounded mt-5 p-2">
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
                 LP Tokens from major pools
               </div>
-              <div className="sh shadow-lg rounded mt-5 p-2">
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
                 Regular Tokens
               </div>
-              <div className="sh shadow-lg rounded mt-5 p-2">
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
                 Interest Bearing Tokens{" "}
               </div>
             </div>
@@ -327,13 +349,15 @@ export default function Home() {
             <div
               style={{
                 width: "100%",
-                height: "100%",
+                height: "auto",
+                minHeight: "30vh",
                 background: "#fff",
                 borderRadius: "20px",
+                display: "flex",
                 justifyContent: "center",
                 textAlign: "center",
                 alignItems: "center",
-                paddingTop: "50%"
+                padding: "1vw",
               }}
             >
               <img src={logo2} />
@@ -357,23 +381,40 @@ export default function Home() {
             <div
               style={{
                 width: "100%",
-                height: "100%",
+                height: "auto",
                 background: "#fff",
                 borderRadius: "20px",
                 justifyContent: "space-around",
                 alignItems: "center",
                 textAlign: "center",
                 padding: "1vw",
+                display: "block",
+                minHeight: "30vh",
               }}
             >
-              <div className="sh shadow-lg rounded mt-5 p-2">
-                LP Tokens from major pools
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
+                Redeploy to LP Farms
               </div>
-              <div className="sh shadow-lg rounded mt-5 p-2">
-                Regular Tokens
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
+                Build up your positions
               </div>
-              <div className="sh shadow-lg rounded mt-5 p-2">
-                Interest Bearing Tokens{" "}
+              <div
+                className="sh shadow-lg rounded mt-5 p-2"
+                style={{
+                  fontFamily: "pp neue machina",
+                }}
+              >
+                Use capital everywhere
               </div>
             </div>
           </div>
@@ -433,7 +474,18 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <div
+        className=""
+        style={{
+          marginLeft: "50%",
+          transform: "translateX(-50%)",
+          width: "100%",
+          background: "#0D1F5B",
+          padding: "3% 10%",
+        }}
+      >
+        <Footer />
+      </div>
     </div>
   );
 }
