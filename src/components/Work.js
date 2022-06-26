@@ -308,7 +308,7 @@ export default function Work() {
             <p style={{}} className="trans-title">
               Get integrated.
             </p>
-            <p className="tran-subtitle" style={{}}>
+            <p className="tran-subtitle" style={{color:'white'}}>
               Easy integration, frictionless access, and safeness.
             </p>
           </div>

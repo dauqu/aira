@@ -42,7 +42,6 @@ export default function Home() {
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        paddingBottom: "3rem"
       }}
     >
       <div
