@@ -35,7 +35,7 @@ export default function Header() {
     <div
       className="header_main h-16 flex text-center justify-between"
       style={{
-        padding: "0px 5vw",
+        padding: "3rem 5vw",
         alignItems: "center",
         position: "fixed",
         width: "100%",
