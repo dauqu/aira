@@ -11,7 +11,7 @@
   text-align: start;
 }
 
-.title {
+.sec-1-title {
   font-size: 64px;
   font-weight: 800;
   font-family: PP Neue Machina;
@@ -103,7 +103,7 @@
   text-align: left;
 }
 
-.grid-2-tile {
+.grid-2-title {
   font-size: 30px;
   color: white;
   font-family: Inter;
@@ -148,8 +148,7 @@
   background: #fff;
   border-radius: 25px;
   padding: 5%;
-  height: auto;
-  min-height: 35vh;
+  height: 20rem;
 }
 
 .card-3-title {
@@ -236,8 +235,8 @@
     text-align: start;
   }
 
-  .title {
-    font-size: 64px;
+  .sec-1-title {
+    font-size: 2rem;
     font-weight: 800;
     font-family: PP Neue Machina;
     color: white;
@@ -294,7 +293,7 @@
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5% 10%;
+    padding: 2% 2%;
   }
 
   .sec-2-title {
@@ -312,7 +311,7 @@
   }
 
   .sec-2-grid {
-    width: 70%;
+    width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
     justify-content: left;
@@ -323,6 +322,7 @@
     justify-content: left;
     align-items: start;
     text-align: left;
+    margin-top: 3rem;
   }
 
   .grid-2-tile {
@@ -356,7 +356,7 @@
   }
 
   .sec-3-grid {
-    width: 65%;
+    width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
     justify-content: left;
@@ -370,8 +370,8 @@
     background: #fff;
     border-radius: 25px;
     padding: 5%;
-    height: auto;
-    min-height: 35vh;
+    height: 20rem;
+    margin-top: 3rem;
   }
 
   .card-3-title {
@@ -437,10 +437,11 @@
     margin-left: 50%;
     border: 1px solid white;
     align-items: center;
+    display: block;
   }
 
   .trans-title {
-    font-size: 48px;
+    font-size: 2rem;
     color: white;
     font-family: PP Neue Machina;
   }
@@ -452,12 +453,22 @@
   }
 
   .trans-btn {
-    width: 232px;
+    width: 150px;
     height: 60px;
     border-radius: 32px;
     background: #fafafa;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-top: 2rem;
+  }
+
+  .grid-4-card {
+    margin-top: 4rem;
+  }
+
+  .tran-subtitle {
+    color: white;
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=Work.css.map */

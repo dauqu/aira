@@ -42,7 +42,7 @@ export default function Header() {
           </p>
         </div>
       </Link>
-
+ 
       {/* Right */}
       <div className="right flex">
         <nav

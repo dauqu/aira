@@ -4,7 +4,9 @@ import Background from "./../assets/sec_1_background.png";
 import trans from "./../assets/trans.png";
 
 
+
 export default function Team() {
+
   const details_data = [
     {
       id: 1,
@@ -61,7 +63,8 @@ export default function Team() {
           backgroundSize: "cover",
           padding: "2% 8%",
           boxShadow: "0px",
-        }}
+        }
+        }
       >
         <div className="mt-40">
           <div
@@ -97,7 +100,7 @@ export default function Team() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-3 mt-40 gap-40 grid-rows-2"
+          className="grid grid-cols-3 mt-40 gap-40 grid-rows-2 lg:grid-cols-2 lg:grid-rows-4"
           style={{
             justifyContent: "center",
             textAlign: "center",
@@ -108,7 +111,7 @@ export default function Team() {
             return (
               <div
                 key={item.id}
-                className="justify-center align-middle text-center"
+                className="justify-center align-middle text-center "
               >
                 <div
                   style={{
@@ -119,7 +122,7 @@ export default function Team() {
                     transform: "translateX(-50%)",
                   }}
                 >
-                  <img src={item.icon === null? "" : item.icon} />
+                  <img src={item.icon === null ? "" : item.icon} />
                 </div>
                 <p
                   className="mt-5"
@@ -176,7 +179,7 @@ export default function Team() {
                 color: "white",
               }}
             >
-             User-friendly, optimizable, and secure staking.
+              User-friendly, optimizable, and secure staking.
             </p>
           </div>
           <button
@@ -194,10 +197,10 @@ export default function Team() {
             Launch App
           </button>
         </div>
-        <Footer/>
+        <Footer />
       </section>
 
-            
+
     </>
   );
 }

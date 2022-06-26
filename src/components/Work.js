@@ -138,7 +138,7 @@ export default function Work() {
       >
         <div className="sec-1-info">
           <div>
-            <p className="title">
+            <p className="sec-1-title">
               Aira Protocol is a <br></br> collateralized debt platform
             </p>
             <p className="subtitle">
