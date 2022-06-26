@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "./../assets/logo.png";
 import "./../assets/style/Header.css";
+
 
 export default function Header() {
   const [scroll, setScroll] = useState([]);
@@ -9,7 +10,27 @@ export default function Header() {
   setInterval(() => {
     setScroll(window.scrollY);
   }, 100);
+  const location = useLocation();
+  console.log(location.pathname)
 
+
+  const menu = [
+    {
+      id: 1,
+      name: "Home",
+      pathname: "/"
+    },
+    {
+      id: 2,
+      name: "How It Works",
+      pathname: "/how-it-work"
+    },
+    {
+      id: 3,
+      name: "Team",
+      pathname: "/team"
+    },
+  ]
   return (
     <div
       className="header_main h-16 flex text-center justify-between"
@@ -54,39 +75,27 @@ export default function Header() {
             marginRight: "40px",
           }}
         >
-          <Link
-            to="/"
-            style={{
-              fontFamily: "Inter",
-              fontSize: "1rem",
-              color: "#FAFAFA",
-              marginRight: "20px",
-            }}
-          >
-            Home
-          </Link>
-          <Link
-            to="/how-it-work"
-            style={{
-              fontFamily: "Inter",
-              fontSize: "1rem",
-              color: "#FAFAFA",
-              marginRight: "20px",
-            }}
-          >
-            How It Works
-          </Link>
-          <Link
-            to="/team"
-            style={{
-              fontFamily: "Inter",
-              fontSize: "1rem",
-              color: "#FAFAFA",
-              marginRight: "20px",
-            }}
-          >
-            Team
-          </Link>
+
+
+
+
+          {menu.map((item) => {
+            return (
+              <Link
+                className={location.pathname === item.pathname ? "underline" : "" + " hover:underline"}
+                key={item.id}
+                to={`${item.pathname}`}
+                style={{
+                  fontFamily: "Inter",
+                  fontSize: "1rem",
+                  color: "#FAFAFA",
+                  marginRight: "20px",
+                }}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
         </nav>
         <button
           style={{
