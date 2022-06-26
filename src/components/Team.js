@@ -2,11 +2,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Background from "./../assets/sec_1_background.png";
 import trans from "./../assets/trans.png";
-
-
+import "./../assets/style/Team.css";
 
 export default function Team() {
-
   const details_data = [
     {
       id: 1,
@@ -63,8 +61,7 @@ export default function Team() {
           backgroundSize: "cover",
           padding: "2% 8%",
           boxShadow: "0px",
-        }
-        }
+        }}
       >
         <div className="mt-40">
           <div
@@ -74,21 +71,17 @@ export default function Team() {
             }}
           >
             <p
+            className="title_"
               style={{
-                fontSize: "64px",
-                fontWeight: "800",
-                fontFamily: "PP Neue Machina",
-                color: "white",
-                fontStyle: "normal",
+               
               }}
             >
               Meet the team
             </p>
             <p
+            className="sub_title_"
               style={{
-                fontSize: "24px",
-                fontWeight: "500",
-                color: "white",
+              
               }}
             >
               We are a family of entrepreneurs, creators, builders and experts.
@@ -100,26 +93,21 @@ export default function Team() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-3 mt-40 gap-40 grid-rows-2 lg:grid-cols-2 lg:grid-rows-4"
+          className="grid grid-cols-3 mt-40 gap-40 grid-rows-2"
           style={{
-            justifyContent: "center",
-            textAlign: "center",
-            alignItems: "center",
+           
           }}
         >
           {details_data.map((item) => {
             return (
               <div
                 key={item.id}
-                className="justify-center align-middle text-center "
+                className="justify-center align-middle text-center grid-card"
               >
                 <div
+                className="icon-div"
                   style={{
-                    justifyContent: "center",
-                    textAlign: "center",
-                    alignItems: "center",
-                    marginLeft: "55%",
-                    transform: "translateX(-50%)",
+                   
                   }}
                 >
                   <img src={item.icon === null ? "" : item.icon} />
@@ -152,24 +140,11 @@ export default function Team() {
         </div>
 
         <div
-          style={{
-            width: "60%",
-            height: "auto",
-            transform: "translateX(-50%)",
-            marginLeft: "50%",
-            border: "1px solid white",
-            alignItems: "center",
-          }}
-          className="mt-20 backdrop-blur-xl bg-white/30 rounded-xl flex justify-between p-8"
+          style={{}}
+          className="mt-20 backdrop-blur-xl bg-white/30 rounded-xl flex justify-between p-8 trans-div"
         >
           <div className="jus justify-start text-start">
-            <p
-              style={{
-                fontSize: "48px",
-                color: "white",
-                fontFamily: "PP Neue Machina",
-              }}
-            >
+            <p className="trans-title" style={{}}>
               Get started now.
             </p>
             <p
@@ -182,25 +157,12 @@ export default function Team() {
               User-friendly, optimizable, and secure staking.
             </p>
           </div>
-          <button
-            style={{
-              width: "232px",
-              height: "60px",
-              borderRadius: "32px",
-              background: "#1C64F2",
-              justifyContent: "center",
-              textAlign: "center",
-              alignItems: "center",
-              color: "#ffffff"
-            }}
-          >
+          <button className="trans-btn" style={{}}>
             Launch App
           </button>
         </div>
         <Footer />
       </section>
-
-
     </>
   );
 }

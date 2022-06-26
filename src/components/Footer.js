@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "./../assets/logo.png";
+import logo from "./../assets/bottom_logo-removebg-preview.png";
 import twitter from "./../assets/twitter.png";
 
 export default function Footer() {
@@ -16,7 +16,9 @@ export default function Footer() {
         <div className="left w-auto flex">
           <div className="logo"></div>
           <div className="company_name">
-            <img src={logo} />
+            <img src={logo} style={{
+              width: "5rem"
+            }}/>
           </div>
 
           <nav

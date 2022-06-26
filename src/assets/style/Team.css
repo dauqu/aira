@@ -6,10 +6,10 @@
   font-style: normal;
 }
 
-.sub_title_{
-    font-size: 24px;
-    font-weight: 500;
-    color: white
+.sub_title_ {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
 }
 
 .trans-div {
@@ -43,16 +43,12 @@
   text-align: center;
   align-items: center;
 }
-.grid-card {
-}
 
 .icon-div {
   justify-content: center;
   text-align: center;
   align-items: center;
   display: flex;
-  // margin-left: 55%;
-  // transform: translateX(-50%)
 }
 
 @media only screen and (max-width: 768px) {
@@ -64,13 +60,12 @@
     font-style: normal;
   }
 
-  .sub_title_{
+  .sub_title_ {
     font-size: 14px;
     font-weight: 500;
     color: white;
     margin-top: 2rem;
-}
-
+  }
 
   .trans-div {
     width: 80%;
@@ -118,4 +113,4 @@
   .grid-card {
     margin-top: 3rem;
   }
-}
+}/*# sourceMappingURL=Team.css.map */
