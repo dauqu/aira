@@ -4,13 +4,11 @@ import logo from "./../assets/logo.png";
 import "./../assets/style/Header.css";
 
 export default function Header() {
-
-  const [scroll, setScroll] = useState([])
+  const [scroll, setScroll] = useState([]);
 
   setInterval(() => {
-    setScroll(window.scrollY)
+    setScroll(window.scrollY);
   }, 100);
-
 
   return (
     <div
@@ -21,7 +19,8 @@ export default function Header() {
         position: "fixed",
         width: "100%",
         zIndex: "100",
-        backgroundColor: scroll > 100 ? "#194B97" : "#00000000"
+        opacity: "0.8",
+        backgroundColor: scroll > 100 ? "#194B97" : "#00000000",
         // backgroundImage:
         //   "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)",
       }}
@@ -42,7 +41,7 @@ export default function Header() {
           </p>
         </div>
       </Link>
- 
+
       {/* Right */}
       <div className="right flex">
         <nav
@@ -56,10 +55,21 @@ export default function Header() {
           }}
         >
           <Link
+            to="/"
+            style={{
+              fontFamily: "Inter",
+              fontSize: "1rem",
+              color: "#FAFAFA",
+              marginRight: "20px",
+            }}
+          >
+            Home
+          </Link>
+          <Link
             to="/how-it-work"
             style={{
               fontFamily: "Inter",
-              fontSize: "16px",
+              fontSize: "1rem",
               color: "#FAFAFA",
               marginRight: "20px",
             }}
@@ -70,7 +80,7 @@ export default function Header() {
             to="/team"
             style={{
               fontFamily: "Inter",
-              fontSize: "16px",
+              fontSize: "1rem",
               color: "#FAFAFA",
               marginRight: "20px",
             }}
