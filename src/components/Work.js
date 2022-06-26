@@ -129,14 +129,14 @@ export default function Work() {
   return (
     <>
       <Header />
-      {/* Section 1 */}
+      {/* Section 1 - */} 
       <section
         className="sec-1"
         style={{
           backgroundImage: `url(${Background})`,
         }}
       >
-        <div className="sec-1-info">
+        <div className="sec-1-info mt-10">
           <div>
             <p className="sec-1-title">
               Aira Protocol is a <br></br> collateralized debt platform
@@ -154,7 +154,6 @@ export default function Work() {
           style={{
             justifyContent: "center",
             textAlign: "center",
-            alignItems: "center",
           }}
         >
           {details_data.map((item) => {
@@ -313,7 +312,7 @@ export default function Work() {
               Easy integration, frictionless access, and safeness.
             </p>
           </div>
-          <button className="trans-btn" style={{}}>
+          <button className="trans-work-btn" style={{}}>
             Get Docs
           </button>
         </div>

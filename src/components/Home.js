@@ -23,16 +23,16 @@ export default function Home() {
     {
       id: 2,
       icon: IC2,
-      title: "Utilization",
+      title: "Liquidity",
       description:
-        "Aira Protocol allows the utilization of traditional interest-bearing assets, asset tokens & LP share tokens to mint an over-collateralized stable coin.",
+        "As Dan Elitzer explained in this post on super- fuid collateral - “If assets can be allocated for multiple  purposes  simultaneously, we  should see more liquidity, lower cost of borrowing, and more effective allocation of capital.”",
     },
     {
       id: 3,
       icon: IC3,
-      title: "Utilization",
+      title: "Efficiency",
       description:
-        "Aira Protocol allows the utilization of traditional interest-bearing assets, asset tokens & LP share tokens to mint an over-collateralized stable coin.",
+        "With these accrued gains in effciency, we aim to offer sector leading borrowing rates and staking yields to Liquidity providers.",
     },
   ];
 
@@ -42,6 +42,7 @@ export default function Home() {
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        paddingBottom: "3rem"
       }}
     >
       <div
@@ -65,7 +66,7 @@ export default function Home() {
         >
           {/* Section */}
           <div
-            className="fram_1 justify-center text-center align-middle mt10"
+            className="fram_1 justify-center text-center align-middle mt10 pt-10"
             style={{
               marginLeft: "50%",
               transform: "translateX(-50%)",
@@ -73,7 +74,7 @@ export default function Home() {
             }}
           >
             <p
-              className="title font-pp"
+              className="title font-pp mt-40"
               style={{
                 color: "white",
                 fontSize: "4rem",
@@ -101,7 +102,7 @@ export default function Home() {
             </p>
 
             {/* Buttons grupe */}
-            <div className="btn-grupe flex justify-center mt-8">
+            <div className="btn-grupe flex justify-center mt-10">
               <button
                 className="btn mr-6"
                 style={{
@@ -141,7 +142,7 @@ export default function Home() {
               borderRadius: "24px",
             }}
             src={screenshot}
-            className="border-white border-4 rounded-sm mt-28"
+            className="border-white border-4 rounded-sm mt-48"
           />
           {/* About */}
           <div
@@ -161,7 +162,7 @@ export default function Home() {
               }}
             >
               <p
-                className="title"
+                className="title mt-24"
                 style={{
                   fontSize: "64px",
                   color: "white",
@@ -181,18 +182,22 @@ export default function Home() {
                 }}
               >
                 Aira Protocol is a collateralized debt platform, with a more
-                expansive choice of asset options to mint a USD stable coin
+                expansive choice of asset options to <br></br>mint a USD stable coin
                 using Collateralized Debt Positions (CDPs).
               </p>
             </div>
 
             {/* Grid */}
             <div
-              className="grid gap-6 grid-cols-3 mt-20"
+              className="grid grid-cols-3 mt-20 gap-40"
               style={{
                 justifyContent: "center",
                 textAlign: "center",
                 alignItems: "center",
+                display: 'flex',
+                width: "70%",
+                marginLeft: "50%",
+                transform: "translateX(-50%)",
               }}
             >
               {details_data.map((item) => {
@@ -206,8 +211,9 @@ export default function Home() {
                         justifyContent: "center",
                         textAlign: "center",
                         alignItems: "center",
-                        marginLeft: "55%",
-                        transform: "translateX(-50%)",
+                        display: "flex",
+                        // marginLeft: "55%",
+                        // transform: "translateX(-50%)",
                       }}
                     >
                       <img src={item.icon} />
@@ -250,7 +256,7 @@ export default function Home() {
               transform: "translateX(-50%)",
               width: "100%",
               background: "#0D1F5B",
-              padding: "3% 20%",
+              padding: "0% 20%",
             }}
           >
             {/* Information */}
@@ -265,13 +271,13 @@ export default function Home() {
                   fontWeight: "800",
                   lineHeight: "130%",
                   fontStyle: "normal",
-                  height: "83px",
+                  // height: "83px",
                 }}
               >
                 How is works?
               </p>
               <p
-                className="subtitle"
+                className="subtitle mt-8"
                 style={{
                   fontFamily: "Inter",
                   fontSize: "24px",
@@ -284,6 +290,7 @@ export default function Home() {
                 into an untapped market.
               </p>
               <p
+                className="mt-8"
                 style={{
                   fontFamily: "Inter",
                   fontSize: "24px",
@@ -305,7 +312,7 @@ export default function Home() {
                 textAlign: "center",
                 alignItems: "center",
                 border: "1px solid white",
-                borderRadius: "15px",
+                borderRadius: "40px",
                 transform: "translateX(-50%)",
                 marginLeft: "50%",
                 height: "auto",
@@ -327,7 +334,7 @@ export default function Home() {
                 }}
               >
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl mt-5 p-2 rounded-xl"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -335,7 +342,7 @@ export default function Home() {
                   LP Tokens from major pools
                 </div>
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl rounded-xl mt-5 p-2"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -343,7 +350,7 @@ export default function Home() {
                   Regular Tokens
                 </div>
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl rounded-xl mt-5 p-2"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -351,23 +358,24 @@ export default function Home() {
                   Interest Bearing Tokens{" "}
                 </div>
               </div>
-              <svg
-                className="arrow_svg"
-                style={{
-                  color: "white",
-                }}
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
+              <div className="svg_style">
+                <svg
+                  className="arrow_svg"
+                  style={{
+                    color: "white",
+                  }}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="180"
+                  height="180"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg></div>
               <div
                 style={{
                   width: "100%",
@@ -384,14 +392,15 @@ export default function Home() {
               >
                 <img src={logo2} />
               </div>
+              <div className="svg_style">
               <svg
                 className="arrow_svg"
                 style={{
                   color: "white",
                 }}
                 xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="80"
+                width="180"
+                height="180"
                 fill="currentColor"
                 class="bi bi-chevron-right"
                 viewBox="0 0 16 16"
@@ -401,6 +410,7 @@ export default function Home() {
                   d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                 />
               </svg>
+              </div>
               <div
                 style={{
                   width: "100%",
@@ -416,7 +426,7 @@ export default function Home() {
                 }}
               >
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl rounded-xl mt-5 p-2"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -424,7 +434,7 @@ export default function Home() {
                   Redeploy to LP Farms
                 </div>
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl rounded-xl mt-5 p-2"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -432,7 +442,7 @@ export default function Home() {
                   Build up your positions
                 </div>
                 <div
-                  className="sh shadow-lg rounded mt-5 p-2"
+                  className="sh shadow-xl rounded-xl mt-5 p-2"
                   style={{
                     fontFamily: "pp neue machina",
                   }}
@@ -460,6 +470,7 @@ export default function Home() {
             {/* Left */}
             <div className="block justify-start text-start">
               <p
+                className="get-start"
                 style={{
                   color: "white",
                   fontSize: "48px",
@@ -489,6 +500,7 @@ export default function Home() {
                 color: "white",
                 textAlign: "center",
                 alignItems: "center",
+                marginTop: "20px"
               }}
             >
               Launch App

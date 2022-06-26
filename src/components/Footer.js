@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./../assets/bottom_logo-removebg-preview.png";
 import twitter from "./../assets/twitter.png";
+import "./../assets/style/Footer.css";
 
 export default function Footer() {
   return (
@@ -22,6 +23,7 @@ export default function Footer() {
           </div>
 
           <nav
+          className="navbar"
             style={{
               display: "flex",
               listStyle: "none",

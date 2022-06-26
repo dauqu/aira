@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .fram_1 {
     width: 90% !important;
   }
@@ -44,5 +44,13 @@
 
   .get_start {
     display: block !important;
+    font-size: 2rem !important;
+  }
+
+  .svg_style {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
   }
 }/*# sourceMappingURL=Home.css.map */
