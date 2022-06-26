@@ -14,6 +14,8 @@ import IC3 from "./../assets/mic_3.png";
 import IC4 from "./../assets/mic_4.png";
 import Footer from "./Footer";
 
+import "./../assets/style/Work.css";
+
 export default function Work() {
   const details_data = [
     {
@@ -123,46 +125,23 @@ export default function Work() {
         "And extra revenues lead to increased staking yields. After we are done with expansion to EVM chains, we will then begin our expansion into non-EVM chains such as Solana, Cosmos, Near, etc",
     },
   ];
+
   return (
     <>
       <Header />
       {/* Section 1 */}
       <section
-        className="sec_1 "
+        className="sec-1"
         style={{
           backgroundImage: `url(${Background})`,
-          width: "auto",
-          height: "auto",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          padding: "8%",
         }}
       >
-        <div className="">
-          <div
-            style={{
-              justifyContent: "left",
-              textAlign: "start",
-            }}
-          >
-            <p
-              style={{
-                fontSize: "64px",
-                fontWeight: "800",
-                fontFamily: "PP Neue Machina",
-                color: "white",
-                fontStyle: "normal",
-              }}
-            >
+        <div className="sec-1-info">
+          <div>
+            <p className="title">
               Aira Protocol is a <br></br> collateralized debt platform
             </p>
-            <p
-              style={{
-                fontSize: "24px",
-                fontWeight: "500",
-                color: "white",
-              }}
-            >
+            <p className="subtitle">
               with a more expansive choice of asset options to mint a USD stable
               coin using<br></br> Collateralized Debt Positions (CDPs).
             </p>
@@ -171,7 +150,7 @@ export default function Work() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-3 mt-40 gap-40"
+          className="grid grid-cols-3 mt-40 gap-40 sec-1-grid"
           style={{
             justifyContent: "center",
             textAlign: "center",
@@ -182,15 +161,17 @@ export default function Work() {
             return (
               <div
                 key={item.id}
-                className="justify-center align-middle text-center"
+                className="justify-center align-middle text-center grid-1-card"
               >
                 <div
+                className="card-1-ic"
                   style={{
+                    display: "flex",
                     justifyContent: "center",
                     textAlign: "center",
                     alignItems: "center",
-                    marginLeft: "55%",
-                    transform: "translateX(-50%)",
+                    // marginLeft: "55%",
+                    // transform: "translateX(-50%)",
                   }}
                 >
                   <img src={item.icon} />
@@ -224,34 +205,14 @@ export default function Work() {
       </section>
 
       <section
+        className="sec-2"
         style={{
           backgroundImage: `url(${Background2})`,
-          width: "auto",
-          height: "auto",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          padding: "5% 10%",
         }}
       >
         <div>
-          <p
-            style={{
-              fontSize: "64px",
-              color: "white",
-              fontWeight: "800",
-              fontFamily: "PP Neue Machina",
-            }}
-          >
-            Key Product Differenciators
-          </p>
-          <p
-            style={{
-              fontSize: "24px",
-              fontWeight: "400",
-              color: "white",
-              fontFamily: "Inter",
-            }}
-          >
+          <p className="sec-2-title">Key Product Differenciators</p>
+          <p className="sec-2-subtitle" style={{}}>
             We aim to provide users with a simple to interact process with
             detailed explanations unlike our <br></br> competitors. We want to
             stay away from creating unnecessary complicated design.
@@ -260,44 +221,16 @@ export default function Work() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-2 mt-40 grid-rows-2 gap-20"
-          style={{
-            width: "70%",
-            marginLeft: "50%",
-            transform: "translateX(-50%)",
-            justifyContent: "left",
-            alignItems: "start",
-          }}
+          className="grid grid-cols-2 mt-40 grid-rows-2 gap-20 sec-2-grid"
+          style={{}}
         >
           {product_data.map((item) => {
             return (
-              <div
-                key={item.id}
-                style={{
-                  justifyContent: "left",
-                  alignItems: "start",
-                  textAlign: "left",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "30px",
-                    color: "white",
-                    fontFamily: "Inter",
-                    fontWeight: "700",
-                  }}
-                >
+              <div className="sec-2-card" key={item.id}>
+                <p className="grid-2-title" style={{}}>
                   {item.title}
                 </p>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: "500",
-                    color: "white",
-                    justifyContent: "left",
-                    alignItems: "start",
-                  }}
-                >
+                <p className="grid-2-subtitle" style={{}}>
                   {item.description}
                 </p>
               </div>
@@ -308,73 +241,25 @@ export default function Work() {
 
       {/* Section 3 */}
       <section
+        className="sec-3"
         style={{
           backgroundImage: `url(${Background3})`,
-          width: "auto",
-          height: "auto",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          padding: "4% 8%",
         }}
       >
         <div style={{}}>
-          <p
-            style={{
-              fontSize: "64px",
-              color: "white",
-              fontFamily: "PP Neue Machina",
-              fontWeight: "800",
-            }}
-          >
-            Our Growth Strategy
-          </p>
+          <p className="sec-3-title">Our Growth Strategy</p>
           <div
-            className="grid grid-cols-2 mt-20 grid-rows-2 gap-10"
-            style={{
-              width: "65%",
-              marginLeft: "50%",
-              transform: "translateX(-50%)",
-              justifyContent: "left",
-              alignItems: "start",
-            }}
+            className="grid grid-cols-2 mt-20 grid-rows-2 gap-10 sec-3-grid"
+            style={{}}
           >
             {growth_strategy.map((item) => {
               return (
-                <div
-                  key={item.id}
-                  style={{
-                    justifyContent: "left",
-                    alignItems: "start",
-                    textAlign: "left",
-                    background: "#fff",
-                    borderRadius: "25px",
-                    padding: "5%",
-                    height: "auto",
-                    minHeight: "35vh",
-                  }}
-                >
+                <div className="grid-3-card" key={item.id} style={{}}>
                   <img src={item.icon} />
-                  <p
-                    style={{
-                      fontSize: "24px",
-                      color: "black",
-                      fontFamily: "Inter",
-                      fontWeight: "700",
-                      marginTop: "1vw",
-                    }}
-                  >
+                  <p className="card-3-title" style={{}}>
                     {item.title}
                   </p>
-                  <p
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "500",
-                      color: "black",
-                      justifyContent: "left",
-                      alignItems: "start",
-                      marginTop: "1vw",
-                    }}
-                  >
+                  <p className="card-3-subtitle" style={{}}>
                     {item.description}
                   </p>
                 </div>
@@ -386,97 +271,30 @@ export default function Work() {
 
       {/* Section 4 */}
       <section
+        className="sec-4"
         style={{
           backgroundImage: `url(${Background4})`,
-          width: "auto",
-          height: "auto",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          padding: "4% 8%",
         }}
       >
         <div style={{}}>
-          <p
-            style={{
-              fontSize: "64px",
-              color: "white",
-              fontFamily: "PP Neue Machina",
-              fontWeight: "800",
-            }}
-          >
+          <p className="sec-4-heading" style={{}}>
             Our Roadmap
           </p>
-          <p
-            style={{
-              fontFamily: "Inter",
-              fontSize: "24px",
-              color: "white",
-            }}
-          >
+          <p className="sec-4-subheading" style={{}}>
             The idea is to first launch on ETH, the main consideration in this
             decision being the liquidity <br></br> on the mainnet. Our primary
             aim is to capture as much of this liquidity as possible.{" "}
           </p>
-          <div
-            className="grid grid-cols-3 mt-20 gap-20"
-            style={{
-              width: "70%",
-              marginLeft: "50%",
-              transform: "translateX(-50%)",
-              justifyContent: "left",
-              alignItems: "start",
-            }}
-          >
+          <div className="grid grid-cols-3 mt-20 gap-20 grid-4 sec-4-grid">
             {our_roadmap.map((item) => {
               return (
-                <div
-                  key={item.id}
-                  style={{
-                    justifyContent: "left",
-                    alignItems: "start",
-                    textAlign: "left",
-                    background: "#fff",
-                    borderRadius: "25px",
-                    padding: "10%",
-                    height: "auto",
-                    minHeight: "55vh",
-                  }}
-                >
+                <div className="grid-4-card" key={item.id}>
                   <img src={item.icon} />
-                  <p
-                    style={{
-                      fontSize: "24px",
-                      color: "black",
-                      fontFamily: "Inter",
-                      fontWeight: "700",
-                    }}
-                  >
-                    {item.title}
-                  </p>
-                  <p
-                    className="mt-5"
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "500",
-                      color: "black",
-                      justifyContent: "left",
-                      alignItems: "start",
-                    }}
-                  >
+                  <p className="card-4-heading">{item.title}</p>
+                  <p className="mt-5 card-1-description" style={{}}>
                     {item.description}
                   </p>
-                  <p
-                    className="mt-10"
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "500",
-                      color: "black",
-                      justifyContent: "left",
-                      alignItems: "start",
-                    }}
-                  >
-                    {item.sec_des}
-                  </p>
+                  <p className="mt-10 card-1-sec-description">{item.sec_des}</p>
                 </div>
               );
             })}
@@ -484,47 +302,18 @@ export default function Work() {
         </div>
 
         <div
-          style={{
-            width: "60%",
-            height: "auto",
-            transform: "translateX(-50%)",
-            marginLeft: "50%",
-            border: "1px solid white",
-            alignItems: "center",
-          }}
-          className="mt-20 backdrop-blur-xl bg-white/30 rounded-xl flex justify-between p-8"
+          style={{}}
+          className="mt-20 backdrop-blur-xl bg-white/30 rounded-xl flex justify-between p-8 trans-div"
         >
           <div className="jus justify-start text-start">
-            <p
-              style={{
-                fontSize: "48px",
-                color: "white",
-                fontFamily: "PP Neue Machina",
-              }}
-            >
+            <p style={{}} className="trans-title">
               Get integrated.
             </p>
-            <p
-              style={{
-                fontSize: "20px",
-                fontWeight: "500",
-                color: "white",
-              }}
-            >
+            <p className="tran-subtitle" style={{}}>
               Easy integration, frictionless access, and safeness.
             </p>
           </div>
-          <button
-            style={{
-              width: "232px",
-              height: "60px",
-              borderRadius: "32px",
-              background: "#FAFAFA",
-              justifyContent: "center",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
+          <button className="trans-btn" style={{}}>
             Get Docs
           </button>
         </div>

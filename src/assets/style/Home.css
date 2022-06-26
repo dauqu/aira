@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+  .fram_1 {
+    width: 90% !important;
+  }
+
+  .title {
+    font-size: 27px !important;
+  }
+
+  .subtitle {
+    font-size: 15px !important;
+    margin-top: 10px;
+  }
+
+  .btn-grupe {
+    display: block !important;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .about {
+    margin-top: 30px !important;
+  }
+
+  .grid {
+    display: block !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .card {
+    margin-top: 40px;
+  }
+
+  .arrow_svg {
+    transform: rotate(45deg) !important;
+    width: 20px;
+    height: 20px;
+    font-size: 30px !important;
+  }
+
+  .get_start {
+    display: block !important;
+  }
+}/*# sourceMappingURL=Home.css.map */

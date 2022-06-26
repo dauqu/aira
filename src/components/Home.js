@@ -7,6 +7,7 @@ import logo from "./../assets/logo.png";
 import logo2 from "./../assets/logo2.png";
 import Footer from "./Footer";
 import "./style.css";
+import "./../assets/style/Home.css";
 
 export default function Home() {
   const details_data = [
@@ -59,7 +60,7 @@ export default function Home() {
           }}
         >
           <p
-            className="font font-pp"
+            className="title font-pp"
             style={{
               color: "white",
               fontSize: "64px",
@@ -70,6 +71,7 @@ export default function Home() {
             To democratize access to capital effcient lending and borrowing.
           </p>
           <p
+            className="subtitle"
             style={{
               fontFamily: "Inter",
               fontSize: "24px",
@@ -84,8 +86,9 @@ export default function Home() {
           </p>
 
           {/* Buttons grupe */}
-          <div className="flex justify-around mt-8">
+          <div className="btn-grupe flex justify-around mt-8">
             <button
+              className="btn"
               style={{
                 alignItems: "center",
                 width: "292px",
@@ -99,6 +102,7 @@ export default function Home() {
               Enter App
             </button>
             <button
+              className="btn"
               style={{
                 alignItems: "center",
                 width: "292px",
@@ -143,6 +147,7 @@ export default function Home() {
             }}
           >
             <p
+              className="title"
               style={{
                 fontSize: "64px",
                 color: "white",
@@ -153,6 +158,7 @@ export default function Home() {
               What is Aira Protocol?
             </p>
             <p
+              className="subtitle"
               style={{
                 fontFamily: "Inter",
                 fontSize: "24px",
@@ -179,7 +185,7 @@ export default function Home() {
               return (
                 <div
                   key={item.id}
-                  className="justify-center align-middle text-center"
+                  className="justify-center align-middle text-center card"
                 >
                   <div
                     style={{
@@ -237,20 +243,22 @@ export default function Home() {
           {/* Information */}
           <div>
             <p
+              className="title"
               style={{
                 fontSize: "64px",
                 color: "white",
                 fontFamily: "pp neue machina",
                 color: "#FAFAFA",
-                fontWeight: "800", 
-                lineHeight: "130%", 
-                fontStyle: "normal", 
-                height: "83px"
+                fontWeight: "800",
+                lineHeight: "130%",
+                fontStyle: "normal",
+                height: "83px",
               }}
             >
               How is works?
             </p>
             <p
+              className="subtitle"
               style={{
                 fontFamily: "Inter",
                 fontSize: "24px",
@@ -331,6 +339,7 @@ export default function Home() {
               </div>
             </div>
             <svg
+              className="arrow_svg"
               style={{
                 color: "white",
               }}
@@ -363,6 +372,7 @@ export default function Home() {
               <img src={logo2} />
             </div>
             <svg
+              className="arrow_svg"
               style={{
                 color: "white",
               }}
@@ -422,7 +432,7 @@ export default function Home() {
 
         {/* Get started */}
         <div
-          className="pt-20 w-10/12"
+          className="pt-20 w-10/12 get_start"
           style={{
             transform: "translateX(-50%)",
             marginLeft: "50%",
@@ -458,6 +468,7 @@ export default function Home() {
           </div>
           {/* Right */}
           <button
+          className="btn"
             style={{
               width: "232px",
               height: "54px",

@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+  .company_name {
+    display: none !important;
+  }
+}/*# sourceMappingURL=Header.css.map */

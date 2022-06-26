@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../assets/logo.png";
+import "./../assets/style/Header.css";
 
 export default function Header() {
 
@@ -13,14 +14,14 @@ export default function Header() {
 
   return (
     <div
-      className="header h-16 flex text-center justify-between"
+      className="header_main h-16 flex text-center justify-between"
       style={{
         padding: "0px 5vw",
         alignItems: "center",
         position: "fixed",
         width: "100%",
         zIndex: "100",
-        backgroundColor: scroll > 200 ? "#194B97" : "#00000000"
+        backgroundColor: scroll > 100 ? "#194B97" : "#00000000"
         // backgroundImage:
         //   "linear-gradient(to right, #0327cc, #0028b7, #0028a2, #00268d, #032478, #0c226f, #111f66, #141d5d, #181a5e, #1d175f, #22135f, #270e5f)",
       }}
