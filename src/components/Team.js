@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import Background from "./../assets/sec_1_background.png";
+import Background from "./../assets/sec_4_background.png";
 import trans from "./../assets/trans.png";
 import "./../assets/style/Team.css";
 
