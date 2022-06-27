@@ -13,12 +13,11 @@
 }
 
 .trans-div {
-  width: 80%;
+  width: 60%;
   height: auto;
   transform: translateX(-50%);
   margin-left: 50%;
   border: 1px solid white;
-  border-radius: 40px;
   align-items: center;
 }
 
@@ -42,6 +41,7 @@
 .grid {
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .icon-div {
